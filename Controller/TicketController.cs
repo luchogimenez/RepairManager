@@ -18,9 +18,6 @@ public class TicketController : ControllerBase
             CustomerPhone="phoneTest",
             CustomerAddress="AddressTest",
             TaskDescription="DescriptionTest"});
-        Console.WriteLine("buenasssssssss");
-    
         return ticketList;
     }
-
 }
