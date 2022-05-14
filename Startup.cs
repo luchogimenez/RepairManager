@@ -15,8 +15,8 @@ namespace RepairManager
         {
 
             services.AddControllers();
-            services.AddDbContext<ApplicationDbContext>(opcion =>
-            opcion.UseSqlServer(Configuration.GetConnectionString("defaultConecction")));
+            services.AddDbContext<ApplicationDbContext>(option =>
+            option.UseSqlServer(Configuration.GetConnectionString("defaultConnection")));
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "RepairManager", Version = "v1" });
